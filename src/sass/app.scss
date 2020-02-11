@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@import './config';
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: transparent;
+  text-shadow: none;
+}
+
+body {
+  height: 100%;
+  font: normal normal normal 16px/1.4 $font-family-base;
+  background-color: $body-default-background-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
